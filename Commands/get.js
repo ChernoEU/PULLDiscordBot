@@ -20,7 +20,6 @@ module.exports = {
         }
 
         const { data } = await axios.get(uri)
-        
-        console.log(data)
+                
     },
 } 
