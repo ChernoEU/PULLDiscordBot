@@ -1,5 +1,11 @@
 const Discord = require("discord.js")
 require("dotenv").config()
+const { intents } = Discord
+const WOK = require('wokcommands')
+const path = require('path')
+
+
+
 
 const client = new Discord.Client({
 	intents: [
@@ -8,6 +14,11 @@ const client = new Discord.Client({
 	]
 })
 
+client.on('ready',  () => {
+	new WOK(client, {
+		commandsDir: path.join(__dirname, 'commands'),
+	})
+})
 
 client.on("ready", () => {
 	console.log(`Logged in as ${client.user.tag}`)
@@ -15,15 +26,17 @@ client.on("ready", () => {
 
 
 client.on("messageCreate", (message) => {
-	if (message.content == "hi"){
-		message.reply("Coffey is a bitch")
+	if (message.content == "hello"){
+		message.reply("wagwan bruv")
 	}
 })
 
 client.on("messageCreate", (message) => {
-	if (message.content == "drugs"){
-		message.reply("Ask Cantlon")
+	if (message.content == "retard"){
+		message.reply("retired")
 	}
+
+
 })
 
 
