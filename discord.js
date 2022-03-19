@@ -43,6 +43,6 @@ client.on("messageCreate", (message) => {
 	}
 })
 
-client.login(process.env.encodeURI(TOKEN);
+client.login(process.env.encodeURI(TOKEN));
 
 //
