@@ -32,20 +32,16 @@ client.on("messageCreate", (message) => {
 })
 
 client.on("messageCreate", (message) => {
-	if (message.content == "L + ratio + didn't ask"){
-		message.reply("@RatPackSteve is that you?")
+	if (message.content == "test"){
+		message.reply("test reaction")
 	}
 })
 
-client.on('message', function (message) {
-    if (message.content.startsWith('retard') && true){
- const retard = 'https://imgur.com/a/zGOpFJT';
-  return message.reply(`NO SWEARING! ${retard}`) }
-  return retard
- return 'hi'
+client.on("messageCreate", (message) => {
+	if (message.content == "!command"){
+		message.reply("test reaction")
+	}
 })
-
-
 
 client.login(process.env.TOKEN)
 //
