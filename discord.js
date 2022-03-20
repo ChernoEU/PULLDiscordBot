@@ -16,11 +16,7 @@ const client = new Discord.Client({
 	]
 })
 
-client.on('ready',  () => {
-	new WOK(client, {
-		commandsDir: path.join(__dirname, 'commands'),
-	})
-})
+
 
 client.on("ready", () => {
 	console.log(`Logged in as ${client.user.tag}`)
