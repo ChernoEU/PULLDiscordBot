@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 
 const { intents } = Discord
 
-const WOK = require('wokcommands');
+// const WOK = require('wokcommands');
 const path = require('path');
 
 
