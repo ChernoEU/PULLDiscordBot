@@ -1,12 +1,7 @@
 const Discord = require("discord.js");
 // const {prefix, token} = require('./config.json');
-
 const { intents } = Discord
-
-// const WOK = require('wokcommands');
 const path = require('path');
-
-
 
 
 const client = new Discord.Client({
@@ -16,12 +11,9 @@ const client = new Discord.Client({
 	]
 })
 
-
-
 client.on("ready", () => {
 	console.log(`Logged in as ${client.user.tag}`)
 })
-
 
 client.on("messageCreate", (message) => {
 	if (message.content == "hello"){
@@ -42,5 +34,4 @@ client.on("messageCreate", (message) => {
 })
 
 client.login(process.env.token);
-
 //
