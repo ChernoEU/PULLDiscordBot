@@ -1,8 +1,10 @@
-const Discord = require("discord.js")
-require("dotenv").config()
+const Discord = require("discord.js");
+const {prefix, token} = require('./config.json');
+
 const { intents } = Discord
-const WOK = require('wokcommands')
-const path = require('path')
+
+const WOK = require('wokcommands');
+const path = require('path');
 
 
 
@@ -43,6 +45,6 @@ client.on("messageCreate", (message) => {
 	}
 })
 
-client.login(process.env.encodeURI(TOKEN));
+client.login(token);
 
 //
