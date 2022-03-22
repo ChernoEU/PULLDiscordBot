@@ -29,7 +29,7 @@ client.on("messageCreate", (message) => {
 
 client.on("messageCreate", (message) => {
 	if (message.content == "!command"){
-		message.reply("https://imgur.com/gallery/XjcJb7l")
+		message.reply("https://imgur.com/a/zGOpFJT")
 	}
 })
 
