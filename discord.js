@@ -17,7 +17,7 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
 	if (message.content == "hello"){
-		message.reply("wagwan bruv")
+		message.reply("hello")
 	}
 })
 
