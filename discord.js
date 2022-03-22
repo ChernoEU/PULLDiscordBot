@@ -22,8 +22,8 @@ client.on("messageCreate", (message) => {
 })
 
 client.on("messageCreate", (message) => {
-	if (message.content == "test"){
-		message.reply("test reaction")
+	if (message.content == "!shrek"){
+		message.reply("https://cdn.discordapp.com/attachments/761457137850515477/763900393427042304/shrekowo.mp4")
 	}
 })
 
