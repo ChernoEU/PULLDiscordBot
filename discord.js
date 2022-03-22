@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-// const {prefix, token} = require('./config.json');
+const {prefix, token} = require('./config.json');
 const { intents } = Discord
 const path = require('path');
 
@@ -29,9 +29,9 @@ client.on("messageCreate", (message) => {
 
 client.on("messageCreate", (message) => {
 	if (message.content == "!command"){
-		message.reply("test reaction")
+		message.reply("https://imgur.com/gallery/XjcJb7l")
 	}
 })
 
-client.login(process.env.token);
+client.login(token);
 //

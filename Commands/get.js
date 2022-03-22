@@ -13,7 +13,7 @@ module.exports = {
     slash: 'both',
 
     callback: async ({ args }) => {
-        let uri = 'https://jsonplaceholder.typicode.com/posts'
+        let uri = 'https://api.mozambiquehe.re/predator?auth=YQ4ntrT5ChZUItQZAPcT'
 
         if (args.length) {
             uri += `/${args[0]}`
