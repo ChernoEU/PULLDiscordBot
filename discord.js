@@ -17,19 +17,19 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
 	if (message.content == "hello"){
-		message.reply("wagwan bruv")
+		message.reply("hello")
 	}
 })
 
 client.on("messageCreate", (message) => {
-	if (message.content == "test"){
-		message.reply("test reaction")
+	if (message.content == "!shrek"){
+		message.reply("https://cdn.discordapp.com/attachments/761457137850515477/763900393427042304/shrekowo.mp4")
 	}
 })
 
 client.on("messageCreate", (message) => {
 	if (message.content == "!command"){
-		message.reply("https://imgur.com/gallery/XjcJb7l")
+		message.reply("https://imgur.com/a/zGOpFJT")
 	}
 })
 
