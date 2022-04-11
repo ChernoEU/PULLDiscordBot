@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-// const {prefix, token} = require('./config.json');
+const {prefix, token} = require('./config.json');
 const { intents } = Discord
 const path = require('path');
 
@@ -33,5 +33,5 @@ client.on("messageCreate", (message) => {
 	}
 })
 
-client.login(process.env.token);
+client.login(token);
 //
